@@ -41,7 +41,7 @@ margin-left: auto; */
 }
 
 /* line 32, ../sass/demo.scss */
-.container .gallery a img {
+.container .gallery-1 a img {
 float: left;
 width: 33%;
 height: auto;
@@ -54,7 +54,7 @@ transition: transform .05s ease;
 /* position: relative; */
 }
 /* line 46, ../sass/demo.scss */
-.container .gallery a:hover img {
+.container .gallery-1 a:hover img {
 -webkit-transform: scale(1.05);
 -moz-transform: scale(1.05);
 -o-transform: scale(1.05);
