@@ -17,14 +17,15 @@ body{
 
 #headerMid{
   position: fixed; /* or absolute */
+  width:100%;
   top: 5%;
-  left: 50%;
+  left: 82%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
 
 .sommeBox{
-  padding: 3%;
+  padding: 2%;
   font-family: 'Barlow', sans-serif;
   font-size: 34px;
   text-align: center;
@@ -112,4 +113,19 @@ height: 93%;
 
   a:hover{
     cursor: crosshair;
+  }
+
+  @media only screen and (max-width: 800px) {
+    #about{
+      font-size: 8px;
+    }
+    #mycoLink{
+      font-size: 12px;
+    }
+    #multLink{
+      font-size: 12px;
+    }
+    .sommeBox{
+      font-size: 14px;
+    }
   }

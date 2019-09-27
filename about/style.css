@@ -238,21 +238,14 @@ display: inline;
 }
 }
 
-@media only screen and (max-width: 1000px) {
-/* CONTENT CONTAINER */
-#content{
-position: absolute;
-right: 0px;
-top: 35px;
-margin-right: 5%;
-width: 60%;
-height: 91%;
-/* background-color: rgba(255, 117, 233, 0.4); */
-background-color: transparent;
-}
-}
 
 @media only screen and (max-width: 800px) {
+
+  #home{
+    left: 6%;
+    font-size: 42px;
+  }
+  
 /* CONTENT CONTAINER */
 #content{
 position: absolute;
@@ -288,5 +281,7 @@ background: white;
 .imgGallery{
 height: 100px;
 }
+
+
 }
 
