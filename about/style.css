@@ -200,6 +200,19 @@ background-color: rgba(0, 0, 0, 0.85);
 }
 
 /* CONTENT CONTAINER */
+#contentBlock{
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  margin-right: 5%;
+  width: 80%;
+  height: 91%;
+  /* background-color: rgba(255, 117, 233, 0.4); */
+  background-color: white;
+  z-index: 99;
+  }
+
+/* CONTENT CONTAINER */
 #content{
 position: absolute;
 right: 0px;

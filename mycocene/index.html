@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="../assets/mycoceneFront.jpg" as="image" />
   <link href="https://fonts.googleapis.com/css?family=Barlow|Lekton" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
@@ -14,18 +15,24 @@
 </head>
 <body>
 
+  <script>
+     window.onload = function() 
+  { document.getElementById("contentBlock").style.display = "none"; }
+    </script>
+
   <a href='../index.html' id='home'>↲</a>
   
+  <div id='contentBlock'>
+    
+  </div>
   <!-- CONTENT BOX -->
 
   <div id='content'>
 
-
-
       <div class='innerContent' id='myco'>
           <img src="../assets/mycoceneFront.jpg" style="width:100%;">
           <div class="subhead" style='margin-top: 4%'>
-            <p> MYCOCENE &nbsp | &nbsp <a href="https://mycocene.net" target="_blank" class="visit">VISIT</a></p>
+            <p> MYCOCENE </p>
           </div>
           <div class="subtext" style="margin-bottom:0%;">
             <p>
