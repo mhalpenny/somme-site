@@ -6,22 +6,35 @@
 body{
   width: 100%;
   height: 100%;
+  background-color: rgb(240, 243, 255);
 }
 
 #header{
   width: 100%;
   position: fixed;
-  top:25px;
+  top:5px;
   z-index: 1000;
+  background-color: rgb(240, 243, 255);
+
 }
 
 #headerMid{
   position: fixed; /* or absolute */
   width:100%;
-  top: 5%;
+  top: 4%;
   left: 82%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+  background-color: rgb(240, 243, 255);
+}
+
+#headerBar{
+width: 100%;
+z-index: 1000;
+background-color: rgb(240, 243, 255);
+height: 8%;
+position: absolute;
+top:0;
 }
 
 .sommeBox{
@@ -52,18 +65,18 @@ transition: opacity 1s ease-in-out;
 opacity: 1;
 }
 
-#myco{
+#mycoImg{
 position:fixed;
 left: 0px;
 top: 0px;
 width:45%;
 height: 93%;
 -webkit-transform: scaleY(-1);
-  transform: scaleY(-1);
+transform: scaleY(-1);
   z-index: -1;
 }
 
-#mult{
+#multImg{
   position:fixed;
   width:57%;
   height: 78%;
@@ -73,7 +86,7 @@ height: 93%;
   }
 
   #multLink{
-    z-index:1000;
+    z-index:100;
     position: absolute;
     top: 40%;
     left: 70%;
@@ -87,7 +100,7 @@ height: 93%;
   }
 
   #mycoLink{
-    z-index:1000;
+    z-index:100;
     position: absolute;
     top: 82%;
     left: 14%;
@@ -103,16 +116,27 @@ height: 93%;
   #about{
     position: fixed;
     right: 5%;
-    top: 5%;
+    top: 4%;
     font-family: 'Barlow', sans-serif;
-    font-size: 10px;
+    font-size: 16px;
     color: black;
     text-decoration: none;
     letter-spacing: 2px;
+    background-color: rgb(240, 243, 255);
   }
 
   a:hover{
     cursor: crosshair;
+  }
+
+  .sidePage{
+    position: fixed;
+    display: none;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 243, 255);
+    overflow-y: scroll;
   }
 
   @media only screen and (max-width: 800px) {
@@ -129,3 +153,285 @@ height: 93%;
       font-size: 14px;
     }
   }
+
+  /* myco */
+
+#home{
+  position:fixed;
+  left:1.5%;
+  top: 4%;
+  font-size: 28px;
+  color: black;
+  cursor: crosshair;
+  text-decoration: none;
+  }
+  
+  #home.hover{
+  color: black;
+  cursor: crosshair;
+  }
+  
+  
+  /* line 16, ../sass/demo.scss */
+  .clear {
+  clear: both;
+  float: none;
+  width: 100%;
+  }
+  
+  /* line 22, ../sass/demo.scss */
+  .container {
+  margin-top: 4%;
+  /* max-width: 1170px; */
+  box-sizing: border-box;
+  width: 100%;
+  padding:0%;
+  float: left;
+  /* padding-right: 15px;
+  padding-left: 15px; */
+  /* margin-right: auto;
+  margin-left: auto; */
+  }
+  
+  /* line 32, ../sass/demo.scss */
+  .container .gallery-1 a img {
+  float: left;
+  width: 33%;
+  height: auto;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform .05s ease;
+  -moz-transition: -moz-transform .05s ease;
+  -o-transition: -o-transform .05s ease;
+  -ms-transition: -ms-transform .05s ease;
+  transition: transform .05s ease;
+  /* position: relative; */
+  }
+  /* line 46, ../sass/demo.scss */
+  .container .gallery-1 a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5;
+  cursor: crosshair;
+  }
+  
+  
+  #sponsors{
+  margin-left: 24%;
+  width: 50%;
+  height: auto;
+  }
+  
+  .p1{
+  
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: justify;
+  color: black;
+  
+  }
+  
+  
+  .subLink{
+  font-size: 9px;
+  }
+  
+  .subLink a:hover{
+  font-style: oblique;
+  background-color: rgba(255, 230, 0, 0);
+  }
+  /* 
+  
+  div.gallery {
+  
+    width: 55%;
+    float: right;
+    padding: 10px;
+    margin-right: 10%;
+  
+  } */
+  
+  .imgHead{
+  
+    max-width: 100%;
+    margin-top: 5%;
+    height:auto;
+    border-width: 0.7px;
+    border-color:white;
+    border-style: solid;
+  }
+  
+  .imgGallery{
+  
+  width: 7%;
+  height: 10%;
+  padding: 5%;
+  position: relative;
+  }
+  
+  
+  .vimeoContainer{
+  width:100%;
+  margin-top: 5%;
+  }
+  
+  
+  .subhead{
+  
+  font-family: 'Barlow', sans-serif;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-top: 4%;
+  margin-bottom: 3%;
+  }
+  
+  .subtext{
+  
+  font-family: 'Lekton', sans-serif;
+  font-size: 14px;
+  margin-top: 2%;
+  margin-bottom: 14%;
+  text-align: justify;
+  line-height: 1.5;
+  }
+  
+  .visit{
+  font-size: 16px;
+  
+  }
+  
+  .subSubtext{
+  
+  font-family: 'Lekton', sans-serif;
+  font-size: 14px;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  text-align: justify;
+  }
+  
+  a.visit:link{
+  text-decoration: none;
+  color: black;
+  
+  }
+  
+  a.visit:visited{
+  text-decoration: none;
+  color: black;
+  
+  }
+  
+  a.visit:hover{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: crosshair;
+  
+  }
+  /* MYCO */
+  
+  .flip{
+  transform: rotate(90deg);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+  }
+  
+  #canvasBg{
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 10%;
+  width: 20%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.85);
+  }
+  
+  /* CONTENT CONTAINER */
+  /* #content{
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  margin-right: 5%;
+  width: 80%;
+  height: 91%;
+  /* background-color: rgba(255, 117, 233, 0.4); */
+  background-color: rgb(240, 243, 255);
+  } */
+  
+  /* INNER CONTENT */
+  .innerContent{
+  position: block;
+  width: 100%;
+  height: 100%;
+  }
+  
+  
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+  
+  #burger{
+  display: none;
+  }
+  
+  .firstImg{
+  width:100%;
+  
+  }
+  
+  @media only screen and (min-width: 800px) {
+  nav{
+  display: inline;
+  }
+  }
+  
+  
+  @media only screen and (max-width: 800px) {
+    #home{
+      left: 6%;
+      font-size: 42px;
+    }
+  }
+    
+  /* CONTENT CONTAINER */
+  #content{
+  position: absolute;
+  right: 0px;
+  top: 150px;
+  margin-right: 5%;
+  width: 90%;
+  height: 91%;
+  /* background-color: rgba(255, 117, 233, 0.4); */
+  background-color: rgb(240, 243, 255);
+  }
+  
+  #burger{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 30px;
+  right: 5%;
+  display: block;
+  }
+  
+  nav {
+  display:none;
+  z-index: 1000;
+  left: auto;
+  right: 3%;
+  top: 80px;
+  border: 1px solid black;
+  border-top-color: transparent;
+  background: white;
+  }
+  
+  .imgGallery{
+  height: 100px;
+  }
+  

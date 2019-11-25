@@ -44,7 +44,7 @@ $(function(){
 });
 
 $(function(){
-  var $gallery3 = $('.gallery-3 a').simpleLightbox();
+  var $gallery3 = $('.gallery-2 a').simpleLightbox();
 
   $gallery3.on('show.simplelightbox', function(){
     console.log('Requested for showing');

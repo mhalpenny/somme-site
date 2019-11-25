@@ -11,15 +11,18 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/somme.js" type="text/javascript"></script>
+  <script src="js/sidePage.js" type="text/javascript"></script>
+  <script src="js/gallery.js" type="text/javascript"></script>
   <link rel="prefetch" href="/assets/mycoceneFront.jpg" as="image" />
   <link rel="prefetch" href="/assets/mult.jpg" as="image" />
-  <title>Document</title>
+  <script src='../node_modules/simplelightbox/dist/simple-lightbox.js' type="text/javascript"></script>
 </head>
 <body>
+  
 
     <!-- <img src="assets/SOMME.png" id='intro'> -->
     <!-- onmouseover="samOn()" onmouseout="samOff()" -->
-
+<div id='headerBar'>
   <div id="header">
     <div id='headerMid'>
     <span class='sommeBox'><a href='#' class='somme' id='sam' >s</a></span>
@@ -30,12 +33,120 @@
   </div>
   <a href='about/' id='about'>about</a>
   </div>
-
+</div>
   
-  <img src='assets/mycocene.png' id='myco'>
-  <img src='assets/MULTIPLEXER.png' id='mult'>
+  <img src='assets/mycocene.png' id='mycoImg'>
+  <img src='assets/MULTIPLEXER.png' id='multImg'>
 
-  <a href="mycocene/" id='mycoLink'>mycocene</a>
+  <!-- <a href="mycocene/" id='mycoLink'>mycocene</a> -->
+  <a href="#" id='mycoLink' onclick="leftPage()">mycocene</a>
   <a href="multiplexer/" id='multLink'>multiplexer</a>
+
+  <div class='sidePage' id='leftPage'>
+
+    <a href='../' id='home'>↲</a>
+      
+  <div id='contentBlock'>
+    
+  </div>
+  
+    <!-- CONTENT BOX -->
+  
+    <div id='content'>
+  
+        <div class='innerContent' id='myco'>
+            <img src="../assets/mycoceneFront.jpg" style="width:100%;">
+            <div class="subhead" style='margin-top: 4%'>
+              <p> MYCOCENE </p>
+            </div>
+            <div class="subtext" style="margin-bottom:0%;">
+              <p>
+                Mycocene​ is a speculative future. It symbolizes a transition away from the Anthropocene towards a future
+                where our current use of technology is composted into one that has symbiosis in mind.
+      
+                <br><br>
+      
+                Symbiosis within the ​Mycocene​ blurs the line between conventional technology and nature. It explores uses of
+                technology that do not attempt to save nor exploit our ecosystems, but augment and communicate with them.
+                Mycelium is the communication highway between species, it is an integral link within ecosystems, functioning
+                like an internet of nutrients.
+      
+                <br><br>
+      
+                In the spirit of this metaphor, the ​Mycocene​ project will repurpose electronic waste to be in symbiosis with
+                this highly advanced natural system of mycelium–foregrounding the immense intelligence that nature exhibits
+                which, as a species, we (humans) choose to ignore.
+                Technology is part of our collective identity, we do not have to stop using technology as a species to help
+                the Earth survive. Instead, we need to change how we create and view our technology to benefit all species on
+                a global level.
+              </p>
+      
+      
+      
+            </div>
+      
+            <div class="subSubtext" style='margin-top: 6%'>
+              <p class='p1'> <u>EXHIBITIONS</u></p>
+              <br><br>
+              Elektra XX (solo exhibit) @ OBORO, Montreal QC <br>
+              June 2019<br>
+              <br>
+              MIAN – International Marketplace for Digital Art @ Centre Phi, Montreal QC<br>
+              June 2019<br>
+              <br>
+              Behavioral Matter @ Centre Pompidou, Paris FR<br>
+              January 2019<br>
+            </div>
+            
+            <div class="subSubtext" style='margin-top: 8%'>
+                <p class='p1'><u>MEDIA</u></p>
+        
+                <!-- lightbox container -->
+                <div class="container">
+                <div class="gallery-1" style='margin-bottom: 6%'>
+        
+                  <a href="../assets/my1.jpg"><img class="quarter" src="../assets/my1.jpg" alt="" title="" /></a>
+                  <a href="../assets/my2.jpg"><img class="quarter" src="../assets/my2.jpg" alt="" title=""/></a>
+                  <a href="../assets/my3.jpg"><img class="quarter" src="../assets/my3.jpg" alt="" title=""/></a>
+                  <div class="clear"></div>
+        
+                  <a href="../assets/my4.jpg"><img class="quarter" src="../assets/my4.jpg" alt="" title=""/></a>
+                  <a href="../assets/my5.jpg"><img class="quarter" src="../assets/my5.jpg" alt="" title=""/></a>
+                  <a href="../assets/my6.jpg"><img class="quarter" src="../assets/my6.jpg" alt="" title=""/></a>
+                  <div class="clear"></div>
+                  
+                </div>
+              </div>
+            </div>   
+      
+          <div class="subSubtext" style='margin-top: 6%'>
+            <p class='p1'><u>PREVIEW</u></p>
+      
+              <div class='vimeoContainer' >
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                    src="https://player.vimeo.com/video/305154473?title=0&byline=0&portrait=0"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+            </div>
+      
+      
+              <div class="subSubtext" style='margin-top: 6%'>
+                <p class='p1'> <u>SPONSORS</u></p>
+      
+                <div class='sponsorContainer'>
+                  <img src="../assets/speclife.jpg" class='imgGallery'>
+                  <img src="../assets/oboro.jpg" class='imgGallery'>
+                  <img src="../assets/fasa.png" class='imgGallery'>
+                  <img src="../assets/csu.png" class='imgGallery'>
+      
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+          <!-- gallery loads after document/images-->
+    <script src="../js/gallery.js" type="text/javascript"></script>
 </body>
 </html>
