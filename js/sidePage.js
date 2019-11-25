@@ -1,23 +1,87 @@
+let left = false;
+let right = false;
+let bottom = false;
+
 function leftPage(){
-$("#leftPage").toggle();
-$("#home").toggle();
-var color = $("#headerBar").css("background-color");
-if(color == 'rgb(255, 255, 255)'){
-$("#headerBar").css("background-color", "transparent");
-$("#leftPage").animate({
-  left: '-100%'
-}, 600, function() {
-  $("#leftPage").css('left', '-100%');
-});
-}else if(color == 'rgba(0, 0, 0, 0)'){
-  $("#headerBar").css("background-color", "white");
   $("#leftPage").animate({
     left: '0%'
-  }, 600, function() {
+  }, 400, function() {
     $(this).css('left', '0%');
   });
+  $("#home").animate({
+    left: '1.5%'
+  }, 400, function() {
+    $(this).css('left', '1.5%');
+  });
+  $("#headerBar").css("background-color", "white");
+  left = true;
   }
-  console.log(color);
+
+
+function rightPage(){
+    $("#rightPage").animate({
+      right: '0%'
+    }, 400, function() {
+      $(this).css('right', '0%');
+    });
+    $("#home").animate({
+      left: '1.5%'
+    }, 400, function() {
+      $(this).css('left', '1.5%');
+    });
+    $("#headerBar").css("background-color", "white");
+    right = true;
+    }
+
+    function bottomPage(){
+      if(bottom == false){
+      $("#bottomPage").animate({
+        bottom: '0%'
+      }, 400, function() {
+        $(this).css('bottom', '0%');
+      });
+      $("#headerBar").css("background-color", "white");
+      bottom = true;
+    }else if(bottom == true){
+        $("#bottomPage").animate({
+          bottom: '-100%'
+        }, 400, function() {
+          $(this).css('bottom', '-100%');
+        });
+        $("#headerBar").css("background-color", "transparent");
+        bottom = false;
+    }
+      }
+
+  function home(){
+
+    if(left == true){
+      $("#leftPage").animate({
+        left: '-100%'
+      }, 400, function() {
+        $(this).css('left', '-100%');
+      });
+    $("#home").animate({
+      left: '-50%'
+    }, 400, function() {
+      $(this).css('left', '-50%');
+    });
+    $("#headerBar").css("background-color", "transparent");
+    left = false;
+    }else if(right == true){
+      $("#rightPage").animate({
+        right: '-100%'
+      }, 400, function() {
+        $(this).css('right', '-100%');
+      });
+    $("#home").animate({
+      left: '-50%'
+    }, 400, function() {
+      $(this).css('left', '-50%');
+    });
+      $("#headerBar").css("background-color", "transparent");
+      right = false;
+  }
 }
 
 

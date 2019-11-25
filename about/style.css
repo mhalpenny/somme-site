@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  background-color: rgb(240, 243, 255);
+  background-color: white;
 }
 
 #home{
@@ -218,7 +218,7 @@ position: absolute;
 right: 0px;
 top: 35px;
 margin-right: 5%;
-width: 80%;
+width: 90%;
 height: 91%;
 /* background-color: rgba(255, 117, 233, 0.4); */
 background-color: transparent;
