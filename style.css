@@ -36,7 +36,7 @@ body {
   width: 100%;
   z-index: 1000;
   background-color: transparent;
-  height: 8%;
+  height: 9%;
   position: absolute;
   top: 0;
 }
@@ -180,22 +180,40 @@ a:hover {
 
 /* myco */
 
-#home {
+#homeL {
   position: fixed;
   left: -50%;
   /* left:1.5%; */
-  top: 4%;
-  font-size: 28px;
+  top: 2.5%;
+  font-size: 38px;
   color: black;
   cursor: crosshair;
   text-decoration: none;
   background: transparent;
 }
 
-#home.hover {
+#homeL.hover {
   color: black;
   cursor: crosshair;
 }
+
+#homeR {
+  position: fixed;
+  left: -50%;
+  /* left:1.5%; */
+  top: 2.5%;
+  font-size: 38px;
+  color: black;
+  cursor: crosshair;
+  text-decoration: none;
+  background: transparent;
+}
+
+#homeR.hover {
+  color: black;
+  cursor: crosshair;
+}
+
 
 
 /* line 16, ../sass/demo.scss */
@@ -254,7 +272,7 @@ a:hover {
 .p1 {
 
   font-family: 'Barlow', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 0%;
   margin-bottom: 0%;
   text-align: justify;
@@ -313,7 +331,7 @@ a:hover {
   font-family: 'Barlow', sans-serif;
   /* font-weight: bold; */
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 4%;
   margin-bottom: 3%;
 }
@@ -321,7 +339,7 @@ a:hover {
 .subtext {
 
   font-family: 'Lekton', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 2%;
   margin-bottom: 14%;
   text-align: justify;
@@ -333,7 +351,7 @@ a:hover {
   font-family: 'Barlow', sans-serif;
   /* font-weight: bold; */
   letter-spacing: 1px;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 4%;
   margin-bottom: 10%;
 }
@@ -341,7 +359,7 @@ a:hover {
 .subtext-a {
 
   font-family: 'Lekton', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 2%;
   margin-bottom: 9%;
   text-align: justify;
@@ -356,7 +374,7 @@ a:hover {
 .subSubtext {
 
   font-family: 'Lekton', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 2%;
   margin-bottom: 0%;
   text-align: justify;

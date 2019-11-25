@@ -8,10 +8,10 @@ function leftPage(){
   }, 400, function() {
     $(this).css('left', '0%');
   });
-  $("#home").animate({
+  $("#homeL").animate({
     left: '1.5%'
   }, 400, function() {
-    $(this).css('left', '1.5%');
+    $(this).css('left', '2%');
   });
   $("#headerBar").css("background-color", "white");
   left = true;
@@ -24,10 +24,10 @@ function rightPage(){
     }, 400, function() {
       $(this).css('right', '0%');
     });
-    $("#home").animate({
+    $("#homeR").animate({
       left: '1.5%'
     }, 400, function() {
-      $(this).css('left', '1.5%');
+      $(this).css('left', '2%');
     });
     $("#headerBar").css("background-color", "white");
     right = true;
@@ -61,12 +61,12 @@ function rightPage(){
       }, 400, function() {
         $(this).css('left', '-100%');
       });
-    $("#home").animate({
+    $("#homeL").animate({
       left: '-50%'
     }, 400, function() {
       $(this).css('left', '-50%');
+      $("#headerBar").css("background-color", "transparent");
     });
-    $("#headerBar").css("background-color", "transparent");
     left = false;
     }else if(right == true){
       $("#rightPage").animate({
@@ -74,12 +74,12 @@ function rightPage(){
       }, 400, function() {
         $(this).css('right', '-100%');
       });
-    $("#home").animate({
+    $("#homeR").animate({
       left: '-50%'
     }, 400, function() {
       $(this).css('left', '-50%');
-    });
       $("#headerBar").css("background-color", "transparent");
+    });
       right = false;
   }
 }

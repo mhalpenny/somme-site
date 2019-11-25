@@ -1,7 +1,7 @@
 $(function(){
-  var $gallery1 = $('.gallery-1 a').simpleLightbox();
+  var gallery1 = $('.gallery-1 a').simpleLightbox();
 
-  $gallery1.on('show.simplelightbox', function(){
+  gallery1.on('show.simplelightbox', function(){
     console.log('Requested for showing');
   })
   .on('shown.simplelightbox', function(){
@@ -44,9 +44,9 @@ $(function(){
 });
 
 $(function(){
-  var $gallery3 = $('.gallery-2 a').simpleLightbox();
+  var gallery3 = $('.gallery-2 a').simpleLightbox();
 
-  $gallery3.on('show.simplelightbox', function(){
+  gallery3.on('show.simplelightbox', function(){
     console.log('Requested for showing');
   })
   .on('shown.simplelightbox', function(){
