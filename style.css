@@ -263,10 +263,9 @@ a:hover {
 }
 
 
-#sponsors {
+#sponsors{
   margin-left: 24%;
   width: 50%;
-  height: auto;
 }
 
 .p1 {
@@ -314,10 +313,10 @@ a:hover {
 .imgGallery {
 
   width: 7%;
-  height: 10%;
   padding: 5%;
   position: relative;
 }
+
 
 
 .vimeoContainer {
