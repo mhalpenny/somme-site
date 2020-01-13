@@ -21,17 +21,6 @@ body {
 
 }
 
-#headerMid {
-  position: fixed;
-  /* or absolute */
-  width: 100%;
-  top: 4%;
-  left: 82%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  background-color: white;
-}
-
 #headerBar {
   width: 100%;
   z-index: 1000;
@@ -42,12 +31,27 @@ body {
   top: 0;
 }
 
+
+#headerMid {
+  position: fixed;
+  /* or absolute */
+  width: 100%;
+  top: 1%;
+  left: 84%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  z-index: 800;
+}
+
 .sommeBox {
-  padding: 2%;
+ position: fixed;
+  /* margin-left: 34%; */
+  top:0px;
   font-family: 'Barlow', sans-serif;
   font-size: 34px;
   text-align: center;
-  letter-spacing: 20px;
+  letter-spacing: 80px;
 }
 
 .somme {
@@ -226,7 +230,6 @@ a:hover {
 }
 
 
-
 /* line 16, ../sass/demo.scss */
 .clear {
   clear: both;
@@ -240,7 +243,7 @@ a:hover {
   /* max-width: 1170px; */
   box-sizing: border-box;
   width: 100%;
-  padding: 0%;
+  padding:0%;
   float: left;
   /* padding-right: 15px;
   padding-left: 15px; */
@@ -261,7 +264,6 @@ a:hover {
   transition: transform .05s ease;
   /* position: relative; */
 }
-
 /* line 46, ../sass/demo.scss */
 .container .gallery-1 a:hover img {
   -webkit-transform: scale(1.05);
@@ -272,6 +274,31 @@ a:hover {
   z-index: 5;
   cursor: crosshair;
 }
+
+/* line 32, ../sass/demo.scss */
+.container .gallery-2 a img {
+  float: left;
+  width: 33%;
+  height: auto;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform .05s ease;
+  -moz-transition: -moz-transform .05s ease;
+  -o-transition: -o-transform .05s ease;
+  -ms-transition: -ms-transform .05s ease;
+  transition: transform .05s ease;
+  /* position: relative; */
+}
+/* line 46, ../sass/demo.scss */
+.container .gallery-2 a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5;
+  cursor: crosshair;
+}
+
 
 
 #sponsors{
@@ -311,19 +338,10 @@ a:hover {
   
   } */
 
-.imgHead {
-
-  max-width: 100%;
-  margin-top: 5%;
-  height: auto;
-  border-width: 0.7px;
-  border-color: white;
-  border-style: solid;
-}
-
 .imgGallery {
 
-  width: 7%;
+  width: 12%;
+  height: auto;
   padding: 5%;
   position: relative;
 }
@@ -454,18 +472,239 @@ a.visit:hover {
 
 }
 
-@media only screen and (min-width: 800px) {
-  nav {
-    display: inline;
+
+@media only screen and (max-width: 1150px) {
+  #headerMid {
+    position: fixed;
+    /* or absolute */
+    width: 100%;
+    top: 2%;
+    left: 82%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    z-index: 800;
   }
+  
+  .sommeBox {
+   position: fixed;
+    /* margin-left: 34%; */
+    top:0px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 60px;
+  }
+
+
+#mycoImg {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  width: auto;
+  height: 78%;
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+  z-index: -1;
 }
+
+#multImg {
+  position: absolute;
+  width: auto;
+  height: 80%;
+  right: 0px;
+  /* margin-top:25%; */
+  bottom: -70%;
+}
+
+#multLink {
+  z-index: 100;
+  position: absolute;
+  top: 105%;
+  left: 59%;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  color: black;
+  transform: translate(-40%, -70%);
+  -ms-transform: translate(-40%, -70%);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+#mycoLink {
+  z-index: 100;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  color: black;
+  transform: translate(-82%, -14%);
+  -ms-transform: translate(-82%, -14%);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+  }
 
 
 @media only screen and (max-width: 800px) {
-  #home {
-    left: 6%;
-    font-size: 42px;
+
+  #headerMid {
+    position: fixed;
+    /* or absolute */
+    width: 100%;
+    top: 2%;
+    left: 78%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    z-index: 800;
   }
+  
+  .sommeBox {
+   position: fixed;
+    /* margin-left: 34%; */
+    top:0px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 45px;
+  }
+
+  #about{
+    font-size: 16px;
+  }
+
+#multLink {
+  z-index: 100;
+  position: absolute;
+  top: 105%;
+  left: 40%;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  color: black;
+  transform: translate(-40%, -70%);
+  -ms-transform: translate(-40%, -70%);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+#mycoLink {
+  z-index: 100;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  color: black;
+  transform: translate(-82%, -14%);
+  -ms-transform: translate(-82%, -14%);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.subhead-a {
+
+  font-family: 'Barlow', sans-serif;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.subtext-a {
+
+  font-family: 'Lekton', sans-serif;
+  font-size: 12px;
+  margin-top: 2%;
+  margin-bottom: 9%;
+  text-align: justify;
+  line-height: 2;
+}
+.imgGallery {
+
+  max-width: 16%;
+  max-height: auto;
+  padding: 5%;
+  position: relative;
+}
+#homeL{
+  font-size: 22px;
+  top:2%;
+  left: 4%;
+}
+#homeR{
+  font-size: 22px;
+  top:2%;
+  left: 4%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+  #headerMid {
+    position: fixed;
+    /* or absolute */
+    width: 100%;
+    top: 2%;
+    left: 76%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    z-index: 800;
+  }
+  
+  .sommeBox {
+   position: fixed;
+    /* margin-left: 34%; */
+    top:0px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 35px;
+  }
+
+  #about{
+    font-size: 12px;
+  }
+
+.subhead-a {
+
+  font-family: 'Barlow', sans-serif;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.subtext-a {
+
+  font-family: 'Lekton', sans-serif;
+  font-size: 12px;
+  margin-top: 2%;
+  margin-bottom: 9%;
+  text-align: justify;
+  line-height: 2;
+}
+.imgGallery {
+
+  max-width: 16%;
+  max-height: auto;
+  padding: 5%;
+  position: relative;
+}
+#homeL{
+  font-size: 22px;
+  top:2%;
+  left: 4%;
+}
+#homeR{
+  font-size: 22px;
+  top:2%;
+  left: 4%;
+}
 }
 
 /* CONTENT CONTAINER */
@@ -500,6 +739,3 @@ nav {
   background: white;
 }
 
-.imgGallery {
-  height: 100px;
-}
