@@ -21,20 +21,6 @@
   
 </head>
 <body>
-  <script>
-    $(document).ready(function(){
-      $.getScript("js/gallery.js");
-      if(window.location.href.indexOf('mycocene') != -1) {
-  leftPage();
-}
- }); 
-
-
-
-
-
-
-    </script>
 
     <!-- <img src="assets/SOMME.png" id='intro'> -->
     <!-- onmouseover="samOn()" onmouseout="samOff()" -->
@@ -308,6 +294,18 @@
           
               </div>
     </div>
-          <!-- gallery loads after document/images-->
+    <script>
+      $(document).ready(function(){
+        $.getScript("js/gallery.js");
+   }); 
+  
+   window.onload = function(){ // Page onload
+    if(location.hash == "#mycocene"){ // Hash is "boom"
+        leftPage(); // call function boom()
+    } else if(location.hash == "#multiplexer"){ // Hash is "boom"
+        rightPage(); // call function boom()
+    }
+}
+      </script>
 </body>
 </html>
