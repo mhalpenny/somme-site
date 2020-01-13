@@ -3,33 +3,37 @@ let right = false;
 let bottom = false;
 
 function leftPage(){
+  $("#leftPage").css('z-index', '900');
   $("#leftPage").animate({
-    left: '0%'
+    opacity: '1.0'
   }, 400, function() {
-    $(this).css('left', '0%');
+    $(this).css('opacity', '1.0');
   });
   $("#homeL").animate({
-    left: '1.5%'
+    opacity: '1.0',
+    visibility: "visible"
   }, 400, function() {
-    $(this).css('left', '2%');
+    $(this).css('opactiy', '1.0');
+    // $("#headerBar").css("background-color", "white");
   });
-  $("#headerBar").css("background-color", "white");
   left = true;
   }
 
 
 function rightPage(){
+  $("#rightPage").css('z-index', '900');
     $("#rightPage").animate({
-      right: '0%'
+      opacity: '1.0'
     }, 400, function() {
-      $(this).css('right', '0%');
+      $(this).css('opacity', '1.0');
     });
     $("#homeR").animate({
-      left: '1.5%'
+      opacity: '1.0',
+      visibility: "visible"
     }, 400, function() {
-      $(this).css('left', '2%');
+      $(this).css('opactiy', '1.0');
+      // $("#headerBar").css("background-color", "white");
     });
-    $("#headerBar").css("background-color", "white");
     right = true;
     }
 
@@ -40,7 +44,6 @@ function rightPage(){
       }, 400, function() {
         $(this).css('bottom', '0%');
       });
-      $("#headerBar").css("background-color", "white");
       bottom = true;
     }else if(bottom == true){
         $("#bottomPage").animate({
@@ -48,7 +51,6 @@ function rightPage(){
         }, 400, function() {
           $(this).css('bottom', '-100%');
         });
-        $("#headerBar").css("background-color", "transparent");
         bottom = false;
     }
       }
@@ -57,28 +59,28 @@ function rightPage(){
 
     if(left == true){
       $("#leftPage").animate({
-        left: '-100%'
+        opacity: '0'
       }, 400, function() {
-        $(this).css('left', '-100%');
+        $(this).css('opacity', '0');
+        $("#leftPage").css('z-index', '-900');
       });
     $("#homeL").animate({
-      left: '-50%'
+      opacity: '0',
     }, 400, function() {
-      $(this).css('left', '-50%');
-      $("#headerBar").css("background-color", "transparent");
+      $(this).css('opacity', '0');
     });
     left = false;
     }else if(right == true){
       $("#rightPage").animate({
-        right: '-100%'
+        opacity: '0'
       }, 400, function() {
-        $(this).css('right', '-100%');
+        $(this).css('opacity', '0');
+        $("#rightPage").css('z-index', '-900');
       });
     $("#homeR").animate({
-      left: '-50%'
+      opacity: '0'
     }, 400, function() {
-      $(this).css('left', '-50%');
-      $("#headerBar").css("background-color", "transparent");
+      $(this).css('opacity', '0');
     });
       right = false;
   }
