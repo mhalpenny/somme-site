@@ -169,7 +169,7 @@ a:hover {
   margin-left: 14%;
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
   #about {
     font-size: 8px;
   }
@@ -254,7 +254,7 @@ a:hover {
 /* line 32, ../sass/demo.scss */
 .container .gallery-1 a img {
   float: left;
-  width: 33%;
+  width: 30%;
   height: auto;
   border: 2px solid #fff;
   -webkit-transition: -webkit-transform .05s ease;
@@ -278,7 +278,7 @@ a:hover {
 /* line 32, ../sass/demo.scss */
 .container .gallery-2 a img {
   float: left;
-  width: 33%;
+  width: 30%;
   height: auto;
   border: 2px solid #fff;
   -webkit-transition: -webkit-transform .05s ease;
@@ -473,7 +473,7 @@ a.visit:hover {
 }
 
 
-@media only screen and (max-width: 1150px) {
+@media all and (max-width: 1150px) {
   #headerMid {
     position: fixed;
     /* or absolute */
@@ -514,13 +514,13 @@ a.visit:hover {
   height: 80%;
   right: 0px;
   /* margin-top:25%; */
-  bottom: -70%;
+  bottom: -50%;
 }
 
 #multLink {
   z-index: 100;
   position: absolute;
-  top: 105%;
+  top: 95%;
   left: 59%;
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
@@ -547,7 +547,7 @@ a.visit:hover {
   }
 
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
   #headerMid {
     position: fixed;
@@ -578,7 +578,7 @@ a.visit:hover {
 #multLink {
   z-index: 100;
   position: absolute;
-  top: 105%;
+  top: 95%;
   left: 40%;
   font-family: 'Barlow', sans-serif;
   font-size: 14px;
@@ -641,7 +641,7 @@ a.visit:hover {
 }
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
 
   #headerMid {
     position: fixed;
@@ -660,13 +660,33 @@ a.visit:hover {
     /* margin-left: 34%; */
     top:0px;
     font-family: 'Barlow', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
     letter-spacing: 35px;
   }
 
   #about{
     font-size: 12px;
+  }
+
+  #mycoImg {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    max-width: 100%;
+    height: 78%;
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+    z-index: -1;
+  }
+  
+  #multImg {
+    position: absolute;
+    max-width: 100%;
+    height: 80%;
+    right: 0px;
+    /* margin-top:25%; */
+    bottom: -70%;
   }
 
 .subhead-a {
@@ -705,6 +725,209 @@ a.visit:hover {
   top:2%;
   left: 4%;
 }
+#multLink {
+  z-index: 100;
+  position: absolute;
+  top: 105%;
+  left: 35%;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  color: black;
+  transform: translate(-40%, -70%);
+  -ms-transform: translate(-40%, -70%);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+#aboutContainer {
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+
+.subhead {
+
+  font-family: 'Barlow', sans-serif;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.subtext {
+
+  font-family: 'Lekton', sans-serif;
+  font-size: 12px;
+  margin-top: 2%;
+  margin-bottom: 14%;
+  text-align: justify;
+  line-height: 1.5;
+}
+.subSubtext {
+
+  font-family: 'Lekton', sans-serif;
+  font-size: 12px;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  text-align: justify;
+}
+.p1 {
+
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: justify;
+  color: black;
+
+}
+}
+
+
+@media all and (max-width: 400px) {
+
+  #headerMid {
+    position: fixed;
+    /* or absolute */
+    width: 100%;
+    top: 2%;
+    left: 78%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    z-index: 800;
+  }
+  
+  .sommeBox {
+   position: fixed;
+    /* margin-left: 34%; */
+    top:0px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 25px;
+  }
+
+  #about{
+    font-size: 10px;
+  }
+
+  #mycoImg {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    max-width: 100%;
+    height: 78%;
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+    z-index: -1;
+  }
+  
+  #multImg {
+    position: absolute;
+    max-width: 100%;
+    height: 80%;
+    right: 0px;
+    /* margin-top:25%; */
+    bottom: -70%;
+  }
+
+.subhead-a {
+
+  font-family: 'Barlow', sans-serif;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.subtext-a {
+
+  font-family: 'Lekton', sans-serif;
+  font-size: 12px;
+  margin-top: 2%;
+  margin-bottom: 9%;
+  text-align: justify;
+  line-height: 2;
+}
+.imgGallery {
+
+  max-width: 16%;
+  max-height: auto;
+  padding: 5%;
+  position: relative;
+}
+#homeL{
+  font-size: 22px;
+  top:2%;
+  left: 4%;
+}
+#homeR{
+  font-size: 22px;
+  top:2%;
+  left: 4%;
+}
+#multLink {
+  z-index: 100;
+  position: absolute;
+  top: 105%;
+  left: 35%;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  color: black;
+  transform: translate(-40%, -70%);
+  -ms-transform: translate(-40%, -70%);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+
+.subhead {
+
+  font-family: 'Barlow', sans-serif;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.subtext {
+
+  font-family: 'Lekton', sans-serif;
+  font-size: 12px;
+  margin-top: 2%;
+  margin-bottom: 14%;
+  text-align: justify;
+  line-height: 1.5;
+}
+.subSubtext {
+
+  font-family: 'Lekton', sans-serif;
+  font-size: 12px;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  text-align: justify;
+}
+.p1 {
+
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: justify;
+  color: black;
+
+}
+
+#aboutContainer {
+  width: 90%;
+  margin-left: 5%;
+}
+
 }
 
 /* CONTENT CONTAINER */
