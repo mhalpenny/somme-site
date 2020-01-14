@@ -372,6 +372,8 @@ a:hover {
   margin-bottom: 14%;
   text-align: justify;
   line-height: 1.5;
+  color: black;
+  text-decoration: none;
 }
 
 .subhead-a {
