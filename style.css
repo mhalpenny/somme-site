@@ -37,7 +37,7 @@ body {
   /* or absolute */
   width: 100%;
   top: 1%;
-  left: 84%;
+  left: 87%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -88,7 +88,7 @@ body {
 #multImg {
   position: fixed;
   width: auto;
-  height: 80%;
+  height: 87%;
   right: 0px;
   /* margin-top:25%; */
   bottom: 0px;
