@@ -209,6 +209,22 @@ a:hover {
 
 /* myco */
 
+#homeB {
+  position: fixed;
+  font-family: 'Barlow', sans-serif;
+  /* bottom: -100%; */
+  /* left:1.5%; */
+  top: 6.5px;
+  left: 3%;
+  font-size: 30px;
+  color: black;
+  cursor: crosshair;
+  opacity:0;
+  text-decoration: none;
+  background: transparent;
+  z-index: 1000;
+}
+
 #homeL {
   position: fixed;
   font-family: 'Barlow', sans-serif;
@@ -226,6 +242,11 @@ a:hover {
 }
 
 #homeL.hover {
+  color: black;
+  cursor: crosshair;
+}
+
+#homeB.hover {
   color: black;
   cursor: crosshair;
 }
@@ -602,7 +623,7 @@ a.visit:hover {
 #mycoLink {
   z-index: 100;
   position: absolute;
-  top: 48%;
+  top: 42%;
   left: 72%;
   font-family: 'Barlow', sans-serif;
   font-size: 14px;
@@ -639,6 +660,11 @@ a.visit:hover {
   position: relative;
 }
 #homeL{
+  font-size: 22px;
+  top:2%;
+  left: 4%;
+}
+#homeB{
   font-size: 22px;
   top:2%;
   left: 4%;
@@ -726,6 +752,12 @@ a.visit:hover {
   left: 4%;
   z-index:1000;
 }
+#homeL{
+  font-size: 22px;
+  top:2%;
+  left: 4%;
+  z-index:1000;
+}
 #homeR{
   font-size: 22px;
   top:2%;
@@ -735,6 +767,7 @@ a.visit:hover {
 
 #multLink {
   bottom: -20%;
+  font-size: 12px;
 }
 
 #mycoLink{
@@ -833,7 +866,7 @@ a.visit:hover {
     height: 80%;
     right: 0px;
     /* margin-top:25%; */
-    bottom: -70%;
+    bottom: -85%;
   }
 
 .subhead-a {
@@ -867,6 +900,11 @@ a.visit:hover {
   top:2%;
   left: 4%;
 }
+#homeB{
+  font-size: 22px;
+  top:2%;
+  left: 4%;
+}
 #homeR{
   font-size: 22px;
   top:2%;
@@ -875,13 +913,11 @@ a.visit:hover {
 #multLink {
   z-index: 100;
   position: absolute;
-  top: 105%;
+bottom:-20%;
   left: 35%;
   font-family: 'Barlow', sans-serif;
   font-size: 10px;
   color: black;
-  transform: translate(-40%, -70%);
-  -ms-transform: translate(-40%, -70%);
   text-decoration: none;
   letter-spacing: 2px;
 }

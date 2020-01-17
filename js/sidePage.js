@@ -38,21 +38,20 @@ function rightPage(){
     }
 
     function bottomPage(){
-      if(bottom == false){
+      
       $("#bottomPage").animate({
         bottom: '0%'
       }, 400, function() {
         $(this).css('bottom', '0%');
       });
+      $("#homeB").animate({
+        opacity: '1.0',
+        visibility: "visible"
+      }, 400, function() {
+        $(this).css('opactiy', '1.0');
+        // $("#headerBar").css("background-color", "white");
+      });
       bottom = true;
-    }else if(bottom == true){
-        $("#bottomPage").animate({
-          bottom: '-100%'
-        }, 400, function() {
-          $(this).css('bottom', '-100%');
-        });
-        bottom = false;
-    }
       }
 
   function home(){
@@ -83,7 +82,20 @@ function rightPage(){
       $(this).css('opacity', '0');
     });
       right = false;
-  }
+  }else if(bottom == true){
+    $("#bottomPage").animate({
+      opacity: '0'
+    }, 400, function() {
+      $(this).css('opacity', '0');
+      $("#bottomPage").css('z-index', '-900');
+    });
+  $("#homeB").animate({
+    opacity: '0'
+  }, 400, function() {
+    $(this).css('opacity', '0');
+  });
+    bottom = false;
+}
 }
 
 
