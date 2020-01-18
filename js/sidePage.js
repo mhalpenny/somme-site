@@ -82,13 +82,12 @@ function rightPage(){
       $(this).css('opacity', '0');
     });
       right = false;
-  }else if(bottom == true){
-    $("#bottomPage").animate({
-      opacity: '0'
-    }, 400, function() {
-      $(this).css('opacity', '0');
-      $("#bottomPage").css('z-index', '-900');
-    });
+  }else if(bottom == true){		
+    $("#bottomPage").animate({		
+      bottom: '-100%'		
+    }, 400, function() {		
+      $(this).css('bottom', '-100%');		
+    });		
   $("#homeB").animate({
     opacity: '0'
   }, 400, function() {

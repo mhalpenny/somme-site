@@ -24,7 +24,7 @@ body {
 #headerBar {
   width: 100%;
   z-index: 1000;
-  background-color: rgba(255,255,255,0.85);
+  background-color: rgba(255,255,255,0.9);
   /* background-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 1) 0%,
@@ -127,7 +127,7 @@ svg{
 #mycoLink {
   z-index: 100;
   position: absolute;
-  top: 35%;
+  top: 41%;
   left: 27%;
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
