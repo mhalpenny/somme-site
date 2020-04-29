@@ -79,6 +79,14 @@ svg{
   cursor: crosshair;
 }
 
+.imgGallery {
+  width: 9%;
+  padding-top: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+  position: relative;
+}
+
 #intro {
   width: 100%;
   height: 100%;
@@ -304,6 +312,7 @@ a:hover {
 .container .gallery-1 a img {
   float: left;
   width: 30%;
+  padding: 1.2%;
   height: auto;
   border: 2px solid #fff;
   -webkit-transition: -webkit-transform .05s ease;
@@ -328,6 +337,7 @@ a:hover {
 .container .gallery-2 a img {
   float: left;
   width: 30%;
+  padding: 1.2%;
   height: auto;
   border: 2px solid #fff;
   -webkit-transition: -webkit-transform .05s ease;
@@ -348,17 +358,23 @@ a:hover {
   cursor: crosshair;
 }
 
-
-
-#sponsors{
-  margin-left: 24%;
-  width: 50%;
+.subtextColored {
+  /* font-family: 'Barlow', sans-serif; */
+  /* font-family: 'Lekton', sans-serif; */
+  font-family: 'Khula', sans-serif;
+  font-size: 16px;
+  margin-top: 2%;
+  margin-bottom: 14%;
+  line-height: 2;
+  text-align: justify;
+  color: blue;
+  text-decoration: none;
 }
 
 .p1 {
 
   font-family: 'Barlow', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 0%;
   margin-bottom: 0%;
   text-align: justify;
@@ -366,6 +382,19 @@ a:hover {
 
 }
 
+.subtextEx {
+
+  /* font-family: 'Barlow', sans-serif; */
+  /* font-family: 'Lekton', sans-serif; */
+  font-family: 'Khula', sans-serif;
+  font-size: 16px;
+  margin-top: 4%;
+  margin-bottom: 0%;
+  line-height: 1.5;
+  text-align: justify;
+  color: black;
+  text-decoration: none;
+}
 
 .subLink {
   font-size: 9px;
@@ -387,15 +416,6 @@ a:hover {
   
   } */
 
-.imgGallery {
-
-  width: 12%;
-  height: auto;
-  padding: 5%;
-  position: relative;
-}
-
-
 
 .vimeoContainer {
   width: 100%;
@@ -415,12 +435,12 @@ a:hover {
 
 .subtext {
 
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Khula', sans-serif;
   font-size: 16px;
   margin-top: 2%;
   margin-bottom: 14%;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 2;
   color: black;
   text-decoration: none;
 }
@@ -659,11 +679,10 @@ a.visit:hover {
   line-height: 2;
 }
 .imgGallery {
-
-  max-width: 16%;
-  max-height: auto;
-  padding: 5%;
-  position: relative;
+  width: 14%;
+  padding-left: 3%;
+  padding-right: 3%;
+  /* height: 100px; */
 }
 #homeL{
   font-size: 22px;
@@ -745,13 +764,11 @@ a.visit:hover {
   text-align: justify;
   line-height: 2;
 }
-.imgGallery {
 
-  max-width: 16%;
-  max-height: auto;
-  padding: 5%;
-  position: relative;
+.sponsorContainer{
+  width:100%;
 }
+
 #homeL{
   font-size: 22px;
   top:2%;
@@ -801,13 +818,43 @@ a.visit:hover {
 
 .subtext {
 
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Khula', sans-serif;
   font-size: 12px;
   margin-top: 2%;
   margin-bottom: 14%;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.75;
+  color: black;
+  text-decoration: none;
 }
+
+
+.subtextColored {
+  /* font-family: 'Barlow', sans-serif; */
+  /* font-family: 'Lekton', sans-serif; */
+  font-family: 'Khula', sans-serif;
+  font-size: 12px;
+  margin-top: 2%;
+  margin-bottom: 14%;
+  line-height: 2;
+  text-align: justify;
+  color: blue;
+  text-decoration: none;
+}
+.subtextEx {
+
+  /* font-family: 'Barlow', sans-serif; */
+  /* font-family: 'Lekton', sans-serif; */
+  font-family: 'Khula', sans-serif;
+  font-size: 12px;
+  margin-top: 4%;
+  margin-bottom: 0%;
+  line-height: 1.5;
+  text-align: justify;
+  color: black;
+  text-decoration: none;
+}
+
 .subSubtext {
 
   font-family: 'Lekton', sans-serif;
@@ -894,13 +941,7 @@ a.visit:hover {
   text-align: justify;
   line-height: 2;
 }
-.imgGallery {
 
-  max-width: 16%;
-  max-height: auto;
-  padding: 5%;
-  position: relative;
-}
 #homeL{
   font-size: 22px;
   top:2%;
@@ -945,16 +986,45 @@ bottom:-20%;
   margin-top: 4%;
   margin-bottom: 3%;
 }
-
 .subtext {
 
-  font-family: 'Lekton', sans-serif;
-  font-size: 12px;
+  font-family: 'Khula', sans-serif;
+  font-size: 14px;
   margin-top: 2%;
   margin-bottom: 14%;
   text-align: justify;
   line-height: 1.5;
+  color: black;
+  text-decoration: none;
 }
+
+
+.subtextColored {
+  /* font-family: 'Barlow', sans-serif; */
+  /* font-family: 'Lekton', sans-serif; */
+  font-family: 'Khula', sans-serif;
+  font-size: 14px;
+  margin-top: 2%;
+  margin-bottom: 14%;
+  line-height: 2;
+  text-align: justify;
+  color: blue;
+  text-decoration: none;
+}
+.subtextEx {
+
+  /* font-family: 'Barlow', sans-serif; */
+  /* font-family: 'Lekton', sans-serif; */
+  font-family: 'Khula', sans-serif;
+  font-size: 14px;
+  margin-top: 4%;
+  margin-bottom: 0%;
+  line-height: 1.5;
+  text-align: justify;
+  color: black;
+  text-decoration: none;
+}
+
 .subSubtext {
 
   font-family: 'Lekton', sans-serif;
