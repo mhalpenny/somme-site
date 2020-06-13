@@ -324,11 +324,7 @@ a:hover {
 }
 /* line 46, ../sass/demo.scss */
 .container .gallery-1 a:hover img {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+  opacity: 0.6;
   z-index: 5;
   cursor: crosshair;
 }
@@ -349,11 +345,7 @@ a:hover {
 }
 /* line 46, ../sass/demo.scss */
 .container .gallery-2 a:hover img {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+  opacity: 0.6;
   z-index: 5;
   cursor: crosshair;
 }
