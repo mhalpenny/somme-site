@@ -6,13 +6,13 @@ function leftPage(){
   $("#leftPage").css('z-index', '900');
   $("#leftPage").animate({
     opacity: '1.0'
-  }, 400, function() {
+  }, 600, function() {
     $(this).css('opacity', '1.0');
   });
   $("#homeL").animate({
     opacity: '1.0',
     visibility: "visible"
-  }, 400, function() {
+  }, 600, function() {
     $(this).css('opactiy', '1.0');
     // $("#headerBar").css("background-color", "white");
   });
@@ -24,13 +24,13 @@ function rightPage(){
   $("#rightPage").css('z-index', '900');
     $("#rightPage").animate({
       opacity: '1.0'
-    }, 400, function() {
+    }, 600, function() {
       $(this).css('opacity', '1.0');
     });
     $("#homeR").animate({
       opacity: '1.0',
       visibility: "visible"
-    }, 400, function() {
+    }, 600, function() {
       $(this).css('opactiy', '1.0');
       // $("#headerBar").css("background-color", "white");
     });
@@ -41,13 +41,13 @@ function rightPage(){
       
       $("#bottomPage").animate({
         bottom: '0%'
-      }, 400, function() {
+      }, 600, function() {
         $(this).css('bottom', '0%');
       });
       $("#homeB").animate({
         opacity: '1.0',
         visibility: "visible"
-      }, 400, function() {
+      }, 600, function() {
         $(this).css('opactiy', '1.0');
         // $("#headerBar").css("background-color", "white");
       });

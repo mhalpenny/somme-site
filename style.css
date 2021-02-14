@@ -136,6 +136,12 @@ svg{
   -ms-transform: translate(-40%, -70%);
   text-decoration: none;
   letter-spacing: 2px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  /* ...and now for the proper property */
+  transition: .5s;
 }
 
 #mycoLink {
@@ -148,12 +154,17 @@ svg{
   color: black;
   text-decoration: none;
   letter-spacing: 2px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
   /* ...and now for the proper property */
-  transition:.5s;
+  transition: .5s;
+}
+
+#mycoLink:hover, #multLink:hover{
+  text-decoration: none;
+  letter-spacing: 3px;
 }
 
 #about {
@@ -166,10 +177,35 @@ svg{
   text-decoration: none;
   letter-spacing: 2px;
   background-color: transparent;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  /* ...and now for the proper property */
+  transition: .5s;
+}
+
+#about:hover{
+  text-decoration: none;
+  letter-spacing: 3px;
 }
 
 a:hover {
   cursor: crosshair;
+}
+
+#info{
+  float: right;
+  text-align: right;
+  font-size: 0.8vw;
+  opacity: 0.6;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  /* ...and now for the proper property */
+  transition: .5s;
+
 }
 
 .sidePage {
@@ -256,12 +292,18 @@ a:hover {
 }
 
 #homeL.hover {
-  color: black;
+  background-color:black;
+  color: white;
+  text-decoration: none;
+  padding: 0.6%;
   cursor: crosshair;
 }
 
 #homeB.hover {
-  color: black;
+  background-color:black;
+  color: white;
+  text-decoration: none;
+  padding: 0.6%;
   cursor: crosshair;
 }
 
@@ -282,8 +324,11 @@ a:hover {
 }
 
 #homeR.hover {
-  color: black;
   cursor: crosshair;
+  background-color:black;
+  color: white;
+  text-decoration: none;
+  padding: 0.6%;
 }
 
 
@@ -311,8 +356,8 @@ a:hover {
 /* line 32, ../sass/demo.scss */
 .container .gallery-1 a img {
   float: left;
-  width: 30%;
-  padding: 1.2%;
+  width: 32.2%;
+  padding: 0.2%;
   height: auto;
   border: 2px solid #fff;
   -webkit-transition: -webkit-transform .05s ease;
@@ -322,6 +367,7 @@ a:hover {
   transition: transform .05s ease;
   /* position: relative; */
 }
+
 /* line 46, ../sass/demo.scss */
 .container .gallery-1 a:hover img {
   opacity: 0.6;
@@ -332,8 +378,8 @@ a:hover {
 /* line 32, ../sass/demo.scss */
 .container .gallery-2 a img {
   float: left;
-  width: 30%;
-  padding: 1.2%;
+  width: 32.2%;
+  padding: 0.2%;
   height: auto;
   border: 2px solid #fff;
   -webkit-transition: -webkit-transform .05s ease;
@@ -364,14 +410,16 @@ a:hover {
 }
 
 .p1 {
-
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
   margin-top: 0%;
   margin-bottom: 0%;
   text-align: justify;
   color: black;
+}
 
+.small{
+  font-size: 10px;
 }
 
 .subtextEx {
@@ -410,8 +458,10 @@ a:hover {
 
 
 .vimeoContainer {
-  width: 100%;
+  width: 98.2%;
   margin-top: 5%;
+  padding-left: 0.4%;
+  padding-right: 0.4%;
 }
 
 
@@ -591,6 +641,7 @@ a.visit:hover {
   letter-spacing: 2px;
 }
   }
+  
 
 
 @media all and (max-width: 800px) {
@@ -695,6 +746,9 @@ a.visit:hover {
 
 @media all and (max-width: 600px) {
 
+  .small{
+    font-size: 9px;
+  }
 
   svg{
     height: 24px;
@@ -869,6 +923,10 @@ a.visit:hover {
 
 
 @media all and (max-width: 400px) {
+
+  .small{
+    font-size: 8px;
+  }
   
   svg{
     height: 18px;
